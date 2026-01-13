@@ -43,50 +43,6 @@ All services are started using a single docker-compose up -d command.
 
 Folder Structure
 
-payment-gateway/
-├── docker-compose.yml
-├── README.md
-├── .env.example
-├── backend/
-│   ├── Dockerfile
-│   ├── pom.xml
-│   └── src/main/
-│       ├── java/com/gateway/
-│       │   ├── PaymentGatewayApplication.java
-│       │   ├── config/
-│       │   │   └── SecurityConfig.java
-│       │   ├── controllers/
-│       │   │   ├── HealthController.java
-│       │   │   ├── OrderController.java
-│       │   │   └── PaymentController.java
-│       │   ├── models/
-│       │   │   ├── Merchant.java
-│       │   │   ├── Order.java
-│       │   │   └── Payment.java
-│       │   ├── repositories/
-│       │   ├── services/
-│       │   │   ├── OrderService.java
-│       │   │   ├── PaymentService.java
-│       │   │   └── ValidationService.java
-│       │   └── dto/
-│       └── resources/
-│           ├── application.properties
-│           └── schema.sql
-├── frontend/
-│   ├── Dockerfile
-│   ├── package.json
-│   └── src/
-│       └── pages/
-│           ├── Login.jsx
-│           ├── Dashboard.jsx
-│           └── Transactions.jsx
-└── checkout-page/
-    ├── Dockerfile
-    └── src/
-        └── pages/
-            ├── Checkout.jsx
-            ├── Success.jsx
-            └── Failure.jsx
 
 
 
